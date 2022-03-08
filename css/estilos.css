@@ -277,9 +277,26 @@ footer{
 /*MEDIA QUERIES*/
 /*Aplicar los siguientes estilos cuando  el tamaño del viewport sea igual o menor a 900px*/
 @media screen and (max-width:900px) {
+	#logo{
+		margin-top: 20px;
+		min-height: 20px;
+	}
+	#seccionPrimera {
+		margin-top: 30px;
+	}
+	.titleContainerLeft {
+		margin-top: 12px;
+	}
 	#seccionPrimera {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+	}
+	#tipAmount{
+		margin: 12px 1em 50px 1em;
+	}
+	[type="reset"] {
+		/*background-color: hsl(185, 41%, 84%);*/
+		margin-bottom: 20px;
 	}
 }
