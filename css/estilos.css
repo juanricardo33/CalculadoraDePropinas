@@ -287,6 +287,9 @@ footer{
 	.titleContainerLeft {
 		margin-top: 12px;
 	}
+	#containerRight {
+		min-width: 300px;
+	}
 	#seccionPrimera {
 		flex-direction: column;
 		justify-content: center;
