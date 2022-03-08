@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <!--Estilos CSS-->
+  <link rel="stylesheet" href="css/estilos.css">
+  <!--Fuentes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+  <!--Cabecera-->
+  <header>
+  </header>
+  <!--Cuerpo del documento-->
+  <main>
+    <section >
+      <div id="logo">
+        <img src="/images/logo.svg" alt="Logo">
+      </div>
+      <div id="seccionPrimera" class="container">
+        <div id="containerLeft">
+          <div id="contenedorFormulario">
+            <form action="" class="formulario">
+              <h5 class="titleContainerLeft">Bill</h5>
+              <div id="iconDollar" class="input-icono">
+                <input class="textArea error" type="text" name="nombre" id="precioProducto"  autocomplete="on" autofocus maxlength="10" required placeholder="0">
+                <label for="precioProducto"></label>
+              </div>
+              <h5 class="titleContainerLeft">Select tip %</h5>
+              <div id="botonesSup">
+                  <input type="radio" name="botonPorciento" id="5">
+                  <label class="boton" for="5">5%</label>
+
+                  <input type="radio" name="botonPorciento" id="10">
+                  <label class="boton" for="10">10%</label>
+
+                  <input type="radio" name="botonPorciento" id="15">
+                  <label class="boton" for="15">15%</label>
+              </div>
+              <div id="botonesInf">
+                  <input type="radio" name="botonPorciento" id="25">
+                  <label class="boton" for="25">25%</label>
+
+                  <input type="radio" name="botonPorciento" id="50">
+                  <label class="boton" for="50">50%</label>
+                  <div class="customArea">
+                     <input class="textArea customValue" type="text" name="custom%" id="custom" placeholder="Custom">
+                    <label class="customValue" for="custom"></label>
+                  </div>
+              </div>
+              <div id="divNumberPerson">
+                <h5>Number of People</h5>
+              </div>
+              <div id="iconPerson" class="input-icono">
+                <input class="textArea" type="text" name="personas" id="numberOfPeople" autocomplete="on" autofocus maxlength="10" required placeholder="0">
+                <label for="numberOfPeople"></label>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div id="containerRight">
+          <div id="tipAmount">
+            <div class="titles" id="tipAmountLeft">
+              <div>
+                <h5>Tip Amount</h5>
+                <h6>/ person</h6>
+              </div>
+              <div>
+                <h5>Total</h5>
+                <h6>/ person</h6>
+              </div>
+            </div>
+            <div class="totals" id="tipAmountRight">
+              <span id="tipAmountPerson">$ 0.00</span>
+              <span id="totalPerson">$ 0.00</span>
+            </div>
+          </div>
+            <input  class="container" type="reset" name="boton_generico" value="Reset">
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <footer class="attribution">
+    <div id="pieDepagina" class="container">
+      <ul class="nav">
+          <li><a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Challenge by</a></li>
+          <li><a href="#">Coded by</a></li>
+      </ul>
+      <div class="copyright">
+          <small>&copy derechos reservados</small>
+      </div>
+  </div>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>

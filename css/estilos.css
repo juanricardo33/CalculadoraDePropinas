@@ -1,0 +1,285 @@
+/*ESTILOS GENERALES*/
+html, body {
+    height: 100%;
+}
+/*Modificar el modelo de cajas de CSS*/
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+/*resetear margenes y padding*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    /*width: 70%;*/
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/*ESTILOS DE LOS CONTENIDOS*/
+
+body{
+    background-color: hsl(185, 41%, 84%);
+}
+#logo{
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	margin-top: 100px;
+	min-height: 50px;
+}
+#seccionPrimera {
+    display: flex;
+    justify-content: space-around;
+	background-color: hsl(0, 0%, 100%);
+	border-radius: 12px;
+	margin-top: 80px;
+    max-width: 90%;
+}
+#containerLeft {
+	margin: 20px;
+	max-width: 50%;
+}
+#containerRight {
+	display: flex;
+	/* padding: 100px 4rem; max-width: 50%; */
+	background-color: hsl(183, 100%, 15%);
+	margin: 20px 12px;
+	border-radius: 12px;
+	flex-flow: column nowrap;
+    align-items: center;
+	min-width: 400px;
+}
+/*Titulos contenedor Izquierdo*/
+.titleContainerLeft {
+	color: hsl(186, 14%, 43%);
+	font-family: 'Space Mono', monospace;
+	margin-top: 30px;
+}
+
+/*ESTILOS DE lOS BOTONES*/
+/*estilos de los div para los botones*/
+#botonesSup {
+	margin: 12px 0px 12px 0px;
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+}
+#botonesInf {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	margin: 12px 0px 30px 0px;
+}
+#divNumberPerson{
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: space-between;
+	color: hsl(186, 14%, 43%);
+	font-family: 'Space Mono', monospace;
+	margin-top: 30px;
+}
+/*Estilos del label de los inputText*/
+#iconDollar{
+	background-image: url('/images/icon-dollar.svg');
+}
+#iconPerson{
+	background-image: url('/images/icon-person.svg');
+}
+.formulario .input-icono {
+	background-repeat: no-repeat;
+	background-position: 15px center;
+	background-size: 15px;
+	display: flex;
+	align-items: center;
+	justify-content:flex-end;
+	color: hsl(183, 100%, 15%);
+	background-color: hsl(202, 50%, 97%);
+	border-radius: 5px;
+	padding-left: 40px;
+	margin-top: 10px;
+}
+.customArea{
+	max-width: 32%;
+	display: flex;
+	align-items: center;
+	color: hsl(183, 100%, 15%);
+	background-color: hsl(202, 50%, 97%);
+	border-radius: 5px;
+}
+.formulario .textArea {
+	color: hsl(183, 100%, 15%);
+	font-family: 'Space Mono', monospace;
+	font-weight: 700;
+	outline: none;
+	font-size: 22px;
+	border: none;
+	text-align: right;
+	padding:8px 22px 8px 0px;
+	background-color: hsl(202, 50%, 97%);
+	max-width: 99%;
+}
+.customValue{
+	display: flex;
+	align-items: center;
+	border-radius: 5px
+}
+
+/*estilos del label de los botones*/
+.formulario .boton {
+	font-family: 'Space Mono', monospace;
+	background-color: hsl(183, 100%, 15%);
+	display: inline-block;
+	cursor: pointer;
+	color: white;
+	font-weight: 700;
+	font-size: 22px;
+	border-radius: 5px;
+	position: relative;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	min-width: 32%;
+	text-align: center;
+	transition: all 0.1s ease;
+}
+/*Efecto de color al posicionar el cursor sobre el label*/
+.formulario label:hover {
+	background: hsl(185, 41%, 84%);
+	color: hsl(183, 100%, 15%);
+}
+
+/*Ocultamos el icono de radio buttom antes de seleccionarlo*/
+.formulario input[type="radio"] {
+	display: none;
+}
+/*Ocultamos el icono de radio buttom despues de seleccionarlo*/
+.formulario input[type="radio"]:checked + label:before {
+	display: none;
+}
+/*Estilos del label Seleccionado*/
+.formulario input[type="radio"]:checked + label {
+	background:  hsl(172, 67%, 45%);
+	color: hsl(183, 100%, 15%);
+	border-radius: 2px;
+	border-radius: 5px;
+}
+/*Fin estilos de los botones_____________________________________________*/
+
+#tipAmount{
+	margin: 12px 1em 130px 1em;
+	display: flex;
+	justify-content: space-between;
+	max-width: 90%;
+}
+
+.titles {
+    display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+    min-height: 180px;
+    margin-right: 3rem;
+	min-width: 4.5rem;
+
+}
+.totals {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    min-height: 180px;
+    color: hsl(172, 67%, 45%);
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 25px;
+	min-width: 4.5rem;
+
+}
+.titles h5 {
+	color: white;
+	font-family: 'Space Mono', monospace;
+}
+.titles h6 {
+	color: hsl(184, 14%, 56%);
+	font-family: 'Space Mono', monospace;
+}
+input[type="text"]{
+
+}
+[type="reset"] {
+	/*background-color: hsl(185, 41%, 84%);*/
+	min-width: 90%;
+	min-height: 40px;
+	font-family: 'Space Mono', monospace;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 700;
+	color: hsl(183, 100%, 15%);
+	text-decoration: none;
+	border: none;
+	border-radius: 5px;
+}
+footer{
+	margin-top: 20px;
+	background: #3D9970;
+	padding: 20px 0;
+}
+#pieDepagina{
+	overflow: hidden;
+}
+.nav {
+	float: left;
+}
+.nav li {
+	display: inline-block;
+	font-size: 0.8rem;
+	padding: 12px 0 0;
+}
+.nav li a {
+	color: #c0bcbc;
+	text-decoration: none;
+	padding-right: 1.5em;
+}
+.nav li a:hover {
+	text-decoration: underline;
+}
+.copyright {
+	float: right;
+	color: #c0bcbc;
+    padding-top: 8px;
+}
+/*Estilos de estados aplicados desde JavaScript*/
+.borderError{
+	border: 2px solid #DD8173;
+}
+.valido{
+	border: 2px solid hsl(172, 67%, 45%);
+}
+.textError{
+	color: #DD8173;
+}
+.disable{
+	background-color: #0C686D;
+}
+.enable{
+	background-color: hsl(185, 41%, 84%);
+}
+/*Fin estilos para Javascript*/
+
+/*MEDIA QUERIES*/
+/*Aplicar los siguientes estilos cuando  el tamaño del viewport sea igual o menor a 900px*/
+@media screen and (max-width:900px) {
+	#seccionPrimera {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
